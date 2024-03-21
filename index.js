@@ -13,9 +13,9 @@ const tutorials = [
 
 function titleCased() {
   return tutorials.map((tutorial) => {
-    const words = tutorial.split(' ');
-    const capitalizedWords = words.map(word => word.charAt(0).toUpperCase() + word.slice(1));    
-    return capitalizedWords.join(' ');
+    const words = tutorial.split(' '); //split string at spaces 
+    const capitalizedWords = words.map(word => word.charAt(0).toUpperCase() + word.slice(1));    //take first character of new strings and makes them uppercase
+    return capitalizedWords.join(' '); //put the sentences back together! 
   });
 };
 
